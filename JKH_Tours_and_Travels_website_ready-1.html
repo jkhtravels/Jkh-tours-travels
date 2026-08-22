@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="JKH Tours & Travels - Airport cabs, local trips and outstation travel services.">
+  <title>JKH Tours & Travels | Airport Cabs & Outstation Trips</title>
+  <style>
+    :root{
+      --gold:#d4af37;
+      --dark:#0b0d10;
+      --dark2:#15181d;
+      --light:#f7f7f5;
+      --muted:#b8bec7;
+      --white:#fff;
+      --max:1120px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Arial,Helvetica,sans-serif;background:var(--light);color:#17191d;line-height:1.6}
+    a{text-decoration:none;color:inherit}
+    .container{width:min(92%,var(--max));margin:auto}
+    header{
+      background:linear-gradient(135deg,#08090b,#1b1f25);
+      color:white;position:sticky;top:0;z-index:20;
+      border-bottom:1px solid rgba(212,175,55,.35)
+    }
+    .nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{font-weight:800;font-size:21px;letter-spacing:.4px}
+    .brand span{color:var(--gold)}
+    nav{display:flex;gap:24px;font-size:14px}
+    nav a:hover{color:var(--gold)}
+    .hero{
+      color:white;
+      background:
+        linear-gradient(110deg,rgba(5,7,9,.94),rgba(5,7,9,.68)),
+        radial-gradient(circle at 80% 20%,rgba(212,175,55,.22),transparent 34%),
+        linear-gradient(135deg,#111820,#29323b);
+      min-height:620px;display:flex;align-items:center
+    }
+    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center}
+    .eyebrow{color:var(--gold);font-weight:700;text-transform:uppercase;letter-spacing:2px;font-size:13px;margin-bottom:14px}
+    h1{font-size:clamp(42px,6vw,72px);line-height:1.02;margin-bottom:20px}
+    .hero p{font-size:18px;color:#e2e5e9;max-width:650px}
+    .buttons{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 22px;border-radius:10px;font-weight:700;border:1px solid transparent}
+    .btn-gold{background:var(--gold);color:#111}
+    .btn-dark{border-color:#68717c;color:white}
+    .btn:hover{transform:translateY(-1px)}
+    .hero-card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);padding:30px;border-radius:22px;backdrop-filter:blur(8px)}
+    .hero-card h3{font-size:24px;margin-bottom:10px}
+    .hero-card p{font-size:15px;color:#d7dbe0}
+    .quick{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}
+    .quick div{background:rgba(0,0,0,.22);padding:16px;border-radius:12px;text-align:center;font-size:13px}
+    section{padding:82px 0}
+    .section-head{text-align:center;max-width:720px;margin:0 auto 42px}
+    .section-head h2{font-size:38px;margin-bottom:10px}
+    .section-head p{color:#666}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+    .card{background:white;border:1px solid #e7e7e7;border-radius:18px;padding:28px;box-shadow:0 8px 30px rgba(0,0,0,.05)}
+    .icon{width:52px;height:52px;border-radius:14px;background:#fff8df;color:#8f7012;display:grid;place-items:center;font-size:25px;margin-bottom:18px}
+    .card h3{font-size:21px;margin-bottom:8px}
+    .card p{color:#666;font-size:15px}
+    .why{background:#101318;color:white}
+    .why-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:50px;align-items:center}
+    .why h2{font-size:40px;margin-bottom:15px}
+    .why p{color:#c7cbd1}
+    .checks{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .check{padding:18px;border:1px solid #2b3038;border-radius:14px}
+    .check b{color:var(--gold);display:block;margin-bottom:4px}
+    .booking{background:#f0ead8}
+    .booking-box{background:white;border-radius:22px;padding:36px;display:grid;grid-template-columns:1fr 1fr;gap:30px;box-shadow:0 12px 40px rgba(0,0,0,.08)}
+    label{font-size:13px;font-weight:700;display:block;margin:0 0 7px}
+    input,textarea,select{width:100%;padding:13px;border:1px solid #d9d9d9;border-radius:9px;margin-bottom:16px;font:inherit}
+    textarea{min-height:110px;resize:vertical}
+    .contact{background:#fff}
+    .contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .contact-item{padding:24px;border:1px solid #e5e5e5;border-radius:16px}
+    .contact-item strong{display:block;margin-bottom:6px}
+    .contact-item span{color:#666}
+    footer{background:#08090b;color:#b9bec6;padding:28px 0;text-align:center;font-size:13px}
+    footer b{color:white}
+    .note{font-size:12px;color:#777;margin-top:8px}
+    @media(max-width:800px){
+      nav{display:none}
+      .hero{min-height:auto;padding:90px 0}
+      .hero-grid,.why-grid,.booking-box{grid-template-columns:1fr}
+      .cards,.contact-grid{grid-template-columns:1fr}
+      .checks{grid-template-columns:1fr}
+      .quick{grid-template-columns:1fr}
+      section{padding:65px 0}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <div class="brand">JKH <span>Tours & Travels</span></div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#why-us">Why Us</a>
+      <a href="#booking">Book</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow">Travel made simple</div>
+      <h1>Reliable rides.<br><span style="color:var(--gold)">Comfortable journeys.</span></h1>
+      <p>JKH Tours & Travels provides convenient airport cab, local travel and outstation trip services for individuals, families and groups.</p>
+      <div class="buttons">
+        <a class="btn btn-gold" href="#booking">Book a Cab</a>
+        <a class="btn btn-dark" href="#contact">Contact Us</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <h3>Airport • Local • Outstation</h3>
+      <p>Plan your next journey with a simple booking request. We’ll help you choose the right cab and travel option.</p>
+      <div class="quick">
+        <div>✈️ Airport Cabs</div>
+        <div>🚕 Local Trips</div>
+        <div>🛣️ Outstation</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <div class="section-head">
+      <h2>Our Services</h2>
+      <p>Simple, convenient travel options for everyday journeys and planned trips.</p>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <div class="icon">✈️</div>
+        <h3>Airport Cab Service</h3>
+        <p>Book a comfortable cab for airport pickup and drop-off with convenient travel planning.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🚕</div>
+        <h3>Local Trips</h3>
+        <p>Convenient cab service for local travel, appointments, shopping, meetings and personal trips.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🛣️</div>
+        <h3>Outstation Trips</h3>
+        <p>Plan one-way or round trips for family travel, holidays, business journeys and longer routes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="why" id="why-us">
+  <div class="container why-grid">
+    <div>
+      <div class="eyebrow">Why choose JKH</div>
+      <h2>Travel with confidence.</h2>
+      <p>Our goal is to make booking and travelling straightforward, comfortable and dependable.</p>
+    </div>
+    <div class="checks">
+      <div class="check"><b>Easy Booking</b>Send your trip details and request a cab.</div>
+      <div class="check"><b>Flexible Trips</b>Local, airport and outstation travel options.</div>
+      <div class="check"><b>Customer Focus</b>Clear communication from booking to journey.</div>
+      <div class="check"><b>Travel Support</b>Get in touch for route and trip information.</div>
+    </div>
+  </div>
+</section>
+
+<section class="booking" id="booking">
+  <div class="container">
+    <div class="section-head">
+      <h2>Request a Booking</h2>
+      <p>Fill in your trip details below. Replace the phone/WhatsApp placeholders in this file before publishing.</p>
+    </div>
+    <div class="booking-box">
+      <div>
+        <h3 style="font-size:28px;margin-bottom:8px">Plan your ride</h3>
+        <p style="color:#666;margin-bottom:20px">For the fastest response, include pickup, destination, date and preferred time.</p>
+        <a class="btn btn-gold" href="tel:917899855299">Call to Book</a>
+        <a class="btn" style="background:#111;color:#fff;margin-left:8px" href="https://wa.me/917899855299?text=Hello%20JKH%20Tours%20%26%20Travels%2C%20I%20want%20to%20book%20a%20cab." target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+      <form onsubmit="sendBooking(event)">
+        <label for="name">Name</label>
+        <input id="name" required placeholder="Your name">
+        <label for="pickup">Pickup location</label>
+        <input id="pickup" required placeholder="Pickup point">
+        <label for="drop">Destination</label>
+        <input id="drop" required placeholder="Destination">
+        <label for="date">Date & time</label>
+        <input id="date" type="datetime-local" required>
+        <label for="details">Trip details</label>
+        <textarea id="details" placeholder="Passengers, one-way/round trip, luggage, etc."></textarea>
+        <button class="btn btn-gold" type="submit">Send Booking on WhatsApp</button>
+        <div class="note">Before publishing, replace 917899855299 in the HTML with your WhatsApp number in international format without + or spaces.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="container">
+    <div class="section-head">
+      <h2>Contact JKH Tours & Travels</h2>
+      <p>Ready to travel? Contact us for booking and trip information.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-item">
+        <strong>📞 Phone</strong>
+        <a href="tel:+917899855299" style="color:inherit">+91 78998 55299</a>
+      </div>
+      <div class="contact-item">
+        <strong>💬 WhatsApp</strong>
+        <a href="https://wa.me/917899855299" target="_blank" rel="noopener" style="color:inherit">+91 78998 55299</a>
+      </div>
+      <div class="contact-item">
+        <strong>✉️ Email</strong>
+        <a href="mailto:jkhtoursandtravels@gmail.com" style="color:inherit">jkhtoursandtravels@gmail.com</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <b>JKH Tours & Travels</b> — Airport Cabs • Local Trips • Outstation Trips<br>
+    © <span id="year"></span> JKH Tours & Travels. All rights reserved.
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  function sendBooking(e){
+    e.preventDefault();
+    const name = document.getElementById("name").value.trim();
+    const pickup = document.getElementById("pickup").value.trim();
+    const drop = document.getElementById("drop").value.trim();
+    const date = document.getElementById("date").value;
+    const details = document.getElementById("details").value.trim();
+
+    const message =
+      `Hello JKH Tours & Travels,%0A%0A` +
+      `Booking request:%0A` +
+      `Name: ${encodeURIComponent(name)}%0A` +
+      `Pickup: ${encodeURIComponent(pickup)}%0A` +
+      `Destination: ${encodeURIComponent(drop)}%0A` +
+      `Date & time: ${encodeURIComponent(date)}%0A` +
+      `Details: ${encodeURIComponent(details)}`;
+
+    window.open(`https://wa.me/917899855299?text=${message}`, "_blank");
+  }
+</script>
+</body>
+</html>
