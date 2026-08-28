@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JKH Tours & Travels</title>
+<style>
+body{margin:0;font-family:Arial,sans-serif;color:#222;background:#f7f7f7}
+header{background:#111;color:#fff;text-align:center;padding:35px 15px}
+header h1{margin:0;font-size:32px}
+header p{font-size:18px}
+section{padding:35px 20px;text-align:center}
+.cards{display:flex;flex-wrap:wrap;justify-content:center;gap:18px}
+.card{background:white;padding:22px;width:250px;border-radius:12px;box-shadow:0 2px 10px #ccc}
+.button{display:inline-block;background:#198754;color:white;padding:15px 25px;border-radius:8px;text-decoration:none;font-weight:bold}
+footer{background:#111;color:white;text-align:center;padding:20px}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>JKH Tours & Travels</h1>
+<p>Airport Cabs • Local Trips • Outstation Trips</p>
+</header>
+
+<section>
+<h2>Our Services</h2>
+
+<div class="cards">
+<div class="card">
+<h3>Airport Cab</h3>
+<p>Reliable airport pickup and drop services.</p>
+</div>
+
+<div class="card">
+<h3>Outstation Trips</h3>
+<p>Comfortable cabs for outstation travel.</p>
+</div>
+
+<div class="card">
+<h3>Local Trips</h3>
+<p>Cab services for local travel and sightseeing.</p>
+</div>
+</div>
+</section>
+
+<section>
+<h2>Book Your Cab</h2>
+<p>Contact us on WhatsApp for booking and enquiries.</p>
+
+<a class="button" href="https://wa.me/917899855299">
+Book on WhatsApp
+</a>
+</section>
+
+<section>
+<h2>JKH Tours & Travels</h2>
+<p>Professional cab and travel services for your journey.</p>
+</section>
+
+<footer>
+<p>© 2026 JKH Tours & Travels. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
