@@ -1,84 +1,507 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>JKH Tours & Travels | Bangalore</title>
-<meta name="description" content="JKH Tours & Travels - Airport cabs, local trips and outstation taxi service in Bangalore. Call or WhatsApp to book.">
-<style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;color:#222;line-height:1.6}
-header{background:#111;color:white;text-align:center;padding:30px 15px}
-h1{color:#d4af37;margin:0}
-.hero{text-align:center;background:#f5f5f5;padding:45px 20px}
-.hero h2{font-size:30px}
-.btn{display:inline-block;padding:14px 22px;margin:8px;border-radius:6px;text-decoration:none;font-weight:bold}
-.call{background:#111;color:white}
-.whatsapp{background:#168c3a;color:white}
-section{text-align:center;padding:35px 20px}
-.cards{display:flex;flex-wrap:wrap;justify-content:center;gap:15px}
-.card{width:280px;padding:22px;border:1px solid #ddd;border-radius:10px}
-.card h3{color:#a77f12}
-.contact{background:#111;color:white}
-.contact h2{color:#d4af37}
-.phone{font-size:24px;font-weight:bold}
-footer{background:#000;color:#ccc;text-align:center;padding:20px}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>JKH Tours & Travels | Airport Cab & Outstation Taxi</title>
+
+  <meta name="description" content="JKH Tours & Travels provides airport cabs, local taxi services and outstation trips in Bangalore. Call or WhatsApp 7899855299 for booking.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 25px 15px;
+    }
+
+    .logo {
+      max-width: 180px;
+      max-height: 130px;
+      width: auto;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    header h1 {
+      color: #d4af37;
+      font-size: 30px;
+      margin-bottom: 5px;
+    }
+
+    header p {
+      color: #fff;
+      font-size: 16px;
+    }
+
+    .hero {
+      background:
+        linear-gradient(rgba(0,0,0,.60), rgba(0,0,0,.60)),
+        url("https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1400&q=80")
+        center/cover;
+      min-height: 430px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 30px 20px;
+    }
+
+    .hero-content {
+      max-width: 750px;
+    }
+
+    .hero h2 {
+      font-size: 42px;
+      color: #fff;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 25px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 22px;
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .call {
+      background: #d4af37;
+      color: #000;
+    }
+
+    .whatsapp {
+      background: #25D366;
+      color: #fff;
+    }
+
+    .section {
+      padding: 45px 18px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section h2 {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 30px;
+      color: #111;
+    }
+
+    .gold {
+      color: #b38b18;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 3px 12px rgba(0,0,0,.12);
+    }
+
+    .card img {
+      width: 100%;
+      height: 210px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card-content {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .card h3 {
+      color: #b38b18;
+      font-size: 22px;
+      margin-bottom: 8px;
+    }
+
+    .booking {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .booking h2 {
+      color: #d4af37;
+      margin-bottom: 12px;
+      font-size: 30px;
+    }
+
+    .booking p {
+      margin-bottom: 22px;
+      font-size: 17px;
+    }
+
+    .why {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      text-align: center;
+    }
+
+    .why-box {
+      background: white;
+      padding: 25px 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,.10);
+    }
+
+    .why-box .icon {
+      font-size: 38px;
+      margin-bottom: 10px;
+    }
+
+    .why-box h3 {
+      margin-bottom: 5px;
+    }
+
+    .contact {
+      background: #fff;
+      text-align: center;
+    }
+
+    .contact p {
+      font-size: 17px;
+      margin: 8px 0;
+    }
+
+    .map {
+      margin-top: 25px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .map iframe {
+      width: 100%;
+      height: 320px;
+      border: 0;
+    }
+
+    footer {
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 25px 15px;
+    }
+
+    footer strong {
+      color: #d4af37;
+    }
+
+    .floating-whatsapp {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      background: #25D366;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 28px;
+      box-shadow: 0 3px 12px rgba(0,0,0,.3);
+      z-index: 999;
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 31px;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+
+      header h1 {
+        font-size: 25px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
-<h1>JKH Tours & Travels</h1>
-<p>Airport Cabs • Local Trips • Outstation Trips</p>
-</header>
+  <!-- HEADER -->
+  <header>
 
-<section class="hero">
-<h2>Reliable Cab Service in Bangalore</h2>
-<p>Airport pickup and drop, local taxi service and outstation trips.</p>
+    <!-- If your logo file is named logo.png, this will display it -->
+    <img src="logo.png" alt="JKH Tours & Travels Logo" class="logo"
+         onerror="this.style.display='none';">
 
-<p><strong>Phone: +91 7899855299</strong></p>
+    <h1>JKH Tours & Travels</h1>
+    <p>Airport Cabs • Local Trips • Outstation Trips</p>
 
-<a class="btn call" href="tel:+917899855299">Call Now</a>
-<a class="btn whatsapp" href="https://wa.me/917899855299">Book on WhatsApp</a>
-</section>
+  </header>
 
-<section>
-<h2>Our Services</h2>
 
-<div class="cards">
-<div class="card">
-<h3>Airport Cabs</h3>
-<p>Reliable airport pickup and drop service in Bangalore.</p>
-</div>
+  <!-- HERO -->
+  <section class="hero">
 
-<div class="card">
-<h3>Local Trips</h3>
-<p>Taxi service for local city travel.</p>
-</div>
+    <div class="hero-content">
 
-<div class="card">
-<h3>Outstation Trips</h3>
-<p>Comfortable taxi service for outstation travel.</p>
-</div>
-</div>
-</section>
+      <h2>Reliable Taxi Service in Bangalore</h2>
 
-<section class="contact">
-<h2>Book Your Cab</h2>
-<p>Call us or WhatsApp us for your booking.</p>
+      <p>
+        Airport Cab • Local Taxi • Outstation Trips
+      </p>
 
-<div class="phone">+91 7899855299</div>
+      <div class="buttons">
 
-<a class="btn call" href="tel:+917899855299">Call +91 7899855299</a>
-<a class="btn whatsapp" href="https://wa.me/917899855299">WhatsApp Booking</a>
+        <a class="btn call" href="tel:+917899855299">
+          📞 Call Now
+        </a>
 
-<p>JKH Tours & Travels<br>Bangalore, Karnataka</p>
-</section>
+        <a class="btn whatsapp"
+           href="https://wa.me/917899855299?text=Hello%20JKH%20Tours%20%26%20Travels,%20I%20want%20to%20book%20a%20cab."
+           target="_blank">
+          💬 WhatsApp Booking
+        </a>
 
-<footer>
-© 2026 JKH Tours & Travels
-</footer>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SERVICES -->
+  <section class="section">
+
+    <h2>Our <span class="gold">Services</span></h2>
+
+    <div class="services">
+
+      <!-- Airport -->
+      <div class="card">
+
+        <img
+          src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=900&q=80"
+          alt="Airport cab service">
+
+        <div class="card-content">
+
+          <h3>✈️ Airport Cabs</h3>
+
+          <p>
+            Comfortable and reliable airport pickup and drop services.
+            Pre-book your cab for a smooth airport journey.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- Local -->
+      <div class="card">
+
+        <img
+          src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&w=900&q=80"
+          alt="Local taxi service">
+
+        <div class="card-content">
+
+          <h3>🚕 Local Trips</h3>
+
+          <p>
+            Taxi service for local travel, meetings, shopping,
+            family trips and city travel in Bangalore.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- Outstation -->
+      <div class="card">
+
+        <img
+          src="https://images.unsplash.com/photo-1465447142348-e9952c393450?auto=format&fit=crop&w=900&q=80"
+          alt="Outstation taxi service">
+
+        <div class="card-content">
+
+          <h3>🛣️ Outstation Trips</h3>
+
+          <p>
+            Comfortable outstation taxi trips from Bangalore
+            for family, business and leisure travel.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- WHY CHOOSE US -->
+  <section class="section">
+
+    <h2>Why Choose <span class="gold">JKH?</span></h2>
+
+    <div class="why">
+
+      <div class="why-box">
+        <div class="icon">🚗</div>
+        <h3>Comfortable Rides</h3>
+        <p>Clean and comfortable travel for your journey.</p>
+      </div>
+
+      <div class="why-box">
+        <div class="icon">⏰</div>
+        <h3>On-Time Service</h3>
+        <p>We aim to provide dependable pickup and drop service.</p>
+      </div>
+
+      <div class="why-box">
+        <div class="icon">📞</div>
+        <h3>Easy Booking</h3>
+        <p>Call or WhatsApp us to book your cab quickly.</p>
+      </div>
+
+      <div class="why-box">
+        <div class="icon">⭐</div>
+        <h3>Customer Focused</h3>
+        <p>Friendly service for local and outstation travel.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- BOOKING -->
+  <section class="booking">
+
+    <h2>Book Your Cab Today</h2>
+
+    <p>
+      Airport transfer, local taxi or outstation trip —
+      contact JKH Tours & Travels.
+    </p>
+
+    <div class="buttons">
+
+      <a class="btn call" href="tel:+917899855299">
+        📞 7899855299
+      </a>
+
+      <a class="btn whatsapp"
+         href="https://wa.me/917899855299?text=Hello%20JKH%20Tours%20%26%20Travels,%20I%20want%20to%20book%20a%20cab."
+         target="_blank">
+        💬 Book on WhatsApp
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT -->
+  <section class="section contact">
+
+    <h2>Contact <span class="gold">JKH Tours & Travels</span></h2>
+
+    <p>📞 <strong>Phone:</strong>
+      <a href="tel:+917899855299">7899855299</a>
+    </p>
+
+    <p>💬 <strong>WhatsApp:</strong>
+      <a href="https://wa.me/917899855299" target="_blank">
+        Chat with us
+      </a>
+    </p>
+
+    <p>📧 <strong>Email:</strong>
+      <a href="mailto:jkhtoursandtravels@gmail.com">
+        jkhtoursandtravels@gmail.com
+      </a>
+    </p>
+
+    <p>
+      📍 Bommanahalli, Bangalore, Karnataka
+    </p>
+
+    <!-- Google Maps -->
+    <div class="map">
+
+      <iframe
+        src="https://www.google.com/maps?q=Kodichikkanahalli%2C%20Bommanahalli%2C%20Bangalore%2C%20Karnataka%20560076&output=embed"
+        loading="lazy"
+        allowfullscreen>
+      </iframe>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <p>
+      © 2026 <strong>JKH Tours & Travels</strong>
+    </p>
+
+    <p>
+      Airport Cabs • Local Trips • Outstation Trips
+    </p>
+
+  </footer>
+
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a
+    class="floating-whatsapp"
+    href="https://wa.me/917899855299?text=Hello%20JKH%20Tours%20%26%20Travels,%20I%20want%20to%20book%20a%20cab."
+    target="_blank"
+    aria-label="WhatsApp JKH Tours & Travels">
+    💬
+  </a>
 
 </body>
 </html>
