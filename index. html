@@ -3,30 +3,26 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>JKH Tours & Travels | Airport Cabs & Outstation Trips</title>
-<meta name="description" content="JKH Tours & Travels - Airport cab service, local trips and outstation trips in Bangalore. Book your cab by phone or WhatsApp.">
-
+<title>JKH Tours & Travels | Bangalore</title>
+<meta name="description" content="JKH Tours & Travels - Airport cabs, local trips and outstation taxi service in Bangalore. Call or WhatsApp to book.">
 <style>
 *{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;color:#222;background:#fff}
-header{background:#111;color:#fff;padding:22px 15px;text-align:center}
-header h1{margin:0;color:#d4af37;font-size:30px}
-header p{margin:8px 0 0;font-size:16px}
-.hero{padding:45px 20px;text-align:center;background:#f5f5f5}
-.hero h2{font-size:30px;margin:0 0 15px}
-.hero p{font-size:18px;line-height:1.5}
+body{margin:0;font-family:Arial,sans-serif;color:#222;line-height:1.6}
+header{background:#111;color:white;text-align:center;padding:30px 15px}
+h1{color:#d4af37;margin:0}
+.hero{text-align:center;background:#f5f5f5;padding:45px 20px}
+.hero h2{font-size:30px}
 .btn{display:inline-block;padding:14px 22px;margin:8px;border-radius:6px;text-decoration:none;font-weight:bold}
-.call{background:#111;color:#fff}
-.whatsapp{background:#168c3a;color:#fff}
-section{padding:35px 20px;text-align:center}
-section h2{color:#111;font-size:27px}
-.services{display:flex;flex-wrap:wrap;justify-content:center;gap:15px}
-.card{width:280px;padding:22px;border:1px solid #ddd;border-radius:10px;background:#fff;box-shadow:0 2px 8px #ddd}
-.card h3{color:#b18b18}
-.contact{background:#111;color:#fff}
+.call{background:#111;color:white}
+.whatsapp{background:#168c3a;color:white}
+section{text-align:center;padding:35px 20px}
+.cards{display:flex;flex-wrap:wrap;justify-content:center;gap:15px}
+.card{width:280px;padding:22px;border:1px solid #ddd;border-radius:10px}
+.card h3{color:#a77f12}
+.contact{background:#111;color:white}
 .contact h2{color:#d4af37}
-.phone{font-size:22px;font-weight:bold}
-footer{background:#000;color:#ccc;text-align:center;padding:20px;font-size:14px}
+.phone{font-size:24px;font-weight:bold}
+footer{background:#000;color:#ccc;text-align:center;padding:20px}
 </style>
 </head>
 
@@ -37,61 +33,51 @@ footer{background:#000;color:#ccc;text-align:center;padding:20px;font-size:14px}
 <p>Airport Cabs • Local Trips • Outstation Trips</p>
 </header>
 
-<div class="hero">
+<section class="hero">
 <h2>Reliable Cab Service in Bangalore</h2>
-<p>Airport cab service, local trips and comfortable outstation taxi service.</p>
+<p>Airport pickup and drop, local taxi service and outstation trips.</p>
 
-<a class="btn call" href="tel:+917899855299">Call +91 7899855299</a>
+<p><strong>Phone: +91 7899855299</strong></p>
 
-<a class="btn whatsapp" href="https://wa.me/917899855299">
-Book on WhatsApp
-</a>
-</div>
+<a class="btn call" href="tel:+917899855299">Call Now</a>
+<a class="btn whatsapp" href="https://wa.me/917899855299">Book on WhatsApp</a>
+</section>
 
 <section>
 <h2>Our Services</h2>
 
-<div class="services">
-
+<div class="cards">
 <div class="card">
-<h3>✈️ Airport Cabs</h3>
-<p>Reliable airport pickup and drop taxi service in Bangalore.</p>
+<h3>Airport Cabs</h3>
+<p>Reliable airport pickup and drop service in Bangalore.</p>
 </div>
 
 <div class="card">
-<h3>🚕 Local Trips</h3>
-<p>Cab service for local travel and city trips.</p>
+<h3>Local Trips</h3>
+<p>Taxi service for local city travel.</p>
 </div>
 
 <div class="card">
-<h3>🛣️ Outstation Trips</h3>
-<p>Comfortable taxi service for outstation travel from Bangalore.</p>
+<h3>Outstation Trips</h3>
+<p>Comfortable taxi service for outstation travel.</p>
 </div>
-
 </div>
 </section>
 
 <section class="contact">
 <h2>Book Your Cab</h2>
+<p>Call us or WhatsApp us for your booking.</p>
 
-<p>Call us directly or send your booking details on WhatsApp.</p>
+<div class="phone">+91 7899855299</div>
 
-<p class="phone">+91 7899855299</p>
+<a class="btn call" href="tel:+917899855299">Call +91 7899855299</a>
+<a class="btn whatsapp" href="https://wa.me/917899855299">WhatsApp Booking</a>
 
-<a class="btn call" href="tel:+917899855299">Call Now</a>
-
-<a class="btn whatsapp" href="https://wa.me/917899855299">
-WhatsApp Booking
-</a>
-
-<p>
-JKH Tours & Travels<br>
-Bangalore, Karnataka
-</p>
+<p>JKH Tours & Travels<br>Bangalore, Karnataka</p>
 </section>
 
 <footer>
-© 2026 JKH Tours & Travels. All Rights Reserved.
+© 2026 JKH Tours & Travels
 </footer>
 
 </body>
