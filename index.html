@@ -3,10 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JKH Tours & Travels | Airport Cab & Outstation Trips</title>
 
-  <title>JKH Tours & Travels | Airport Cabs & Outstation Trips</title>
-
-  <meta name="description" content="JKH Tours & Travels - Airport cab service, local trips and outstation taxi service in Bangalore. Call or WhatsApp to book your cab.">
+  <meta name="description" content="JKH Tours & Travels provides airport cab services, local trips and outstation trips in Bengaluru. Call or WhatsApp for booking.">
 
   <style>
     * {
@@ -17,45 +16,41 @@
 
     body {
       font-family: Arial, sans-serif;
-      background: #f5f5f5;
+      background: #f7f7f7;
       color: #222;
       line-height: 1.6;
     }
 
     header {
       background: #000;
-      color: white;
+      color: #fff;
       text-align: center;
       padding: 25px 15px;
     }
 
     .logo {
-      width: 180px;
-      max-width: 80%;
-      border-radius: 10px;
-      margin-bottom: 12px;
-    }
-
-    header h1 {
+      font-size: 32px;
+      font-weight: bold;
       color: #d4af37;
-      font-size: 30px;
-      margin-bottom: 5px;
     }
 
     header p {
-      font-size: 17px;
+      margin-top: 6px;
+      font-size: 16px;
     }
 
     .hero {
-      background: #111;
-      color: white;
+      padding: 55px 20px;
       text-align: center;
-      padding: 50px 20px;
+      background:
+        linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+        url("https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1600&q=80")
+        center/cover;
+      color: white;
     }
 
-    .hero h2 {
-      color: #d4af37;
-      font-size: 32px;
+    .hero h1 {
+      font-size: 36px;
       margin-bottom: 12px;
     }
 
@@ -73,11 +68,10 @@
 
     .btn {
       display: inline-block;
-      padding: 14px 25px;
+      padding: 13px 22px;
       border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
-      font-size: 16px;
     }
 
     .call {
@@ -91,21 +85,21 @@
     }
 
     section {
+      padding: 45px 20px;
       max-width: 1100px;
       margin: auto;
-      padding: 45px 20px;
     }
 
-    section h2 {
+    h2 {
       text-align: center;
-      font-size: 28px;
       margin-bottom: 25px;
+      font-size: 28px;
     }
 
     .services {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 22px;
+      gap: 20px;
     }
 
     .service {
@@ -117,242 +111,167 @@
 
     .service img {
       width: 100%;
-      height: 210px;
+      height: 190px;
       object-fit: cover;
-      display: block;
     }
 
-    .service-content {
-      padding: 20px;
+    .service div {
+      padding: 18px;
       text-align: center;
     }
 
     .service h3 {
-      color: #b18a16;
-      font-size: 22px;
       margin-bottom: 8px;
     }
 
-    .about {
+    .location {
       background: white;
-      border-radius: 12px;
-      padding: 30px 20px;
       text-align: center;
+      border-radius: 12px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.10);
+      padding: 30px 20px;
     }
 
-    .about p {
-      max-width: 800px;
-      margin: auto;
-      font-size: 17px;
+    .map-btn {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 13px 22px;
+      background: #000;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
     }
 
     .contact {
-      background: #111;
+      background: #000;
       color: white;
       text-align: center;
-      max-width: none;
+      padding: 45px 20px;
     }
 
     .contact h2 {
       color: #d4af37;
     }
 
-    .contact p {
-      font-size: 18px;
-      margin: 8px 0;
-    }
-
     footer {
-      background: #000;
-      color: white;
+      background: #111;
+      color: #aaa;
       text-align: center;
-      padding: 20px;
+      padding: 18px;
       font-size: 14px;
     }
 
-    footer strong {
-      color: #d4af37;
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 28px;
+      }
+
+      .logo {
+        font-size: 27px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-  <!-- HEADER -->
   <header>
-
-    <img
-      class="logo"
-      src="logo.png"
-      alt="JKH Tours & Travels Logo"
-    >
-
-    <h1>JKH Tours & Travels</h1>
-
+    <div class="logo">JKH TOURS & TRAVELS</div>
     <p>Airport Cabs • Local Trips • Outstation Trips</p>
-
   </header>
 
-
-  <!-- HERO -->
   <div class="hero">
-
-    <h2>Reliable Cab Service in Bangalore</h2>
-
-    <p>
-      Airport transfers, local taxi service and comfortable outstation trips.
-    </p>
+    <h1>Reliable Cab Service in Bengaluru</h1>
+    <p>Airport transfers, local travel and comfortable outstation trips.</p>
 
     <div class="buttons">
+      <a class="btn call" href="tel:+917899855299">📞 Call Now</a>
 
-      <a class="btn call" href="tel:+917899855299">
-        📞 Call Now
+      <a class="btn whatsapp"
+         href="https://wa.me/917899855299?text=Hello%20JKH%20Tours%20%26%20Travels%2C%20I%20want%20to%20book%20a%20cab."
+         target="_blank">
+        💬 WhatsApp
       </a>
-
-      <a
-        class="btn whatsapp"
-        href="https://wa.me/917899855299"
-        target="_blank"
-      >
-        💬 WhatsApp Booking
-      </a>
-
     </div>
-
   </div>
 
-
-  <!-- SERVICES -->
   <section>
-
     <h2>Our Services</h2>
 
     <div class="services">
 
-
-      <!-- AIRPORT -->
       <div class="service">
-
-        <img
-          src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1000&q=80"
-          alt="Airport Cab Service"
-        >
-
-        <div class="service-content">
-
+        <img src="https://images.unsplash.com/photo-1565043666747-69f6646db940?auto=format&fit=crop&w=900&q=80"
+             alt="Airport Cab Service">
+        <div>
           <h3>✈️ Airport Cabs</h3>
-
-          <p>
-            Reliable airport pickup and drop service with comfortable cabs.
-          </p>
-
+          <p>Comfortable and reliable airport pickup and drop services.</p>
         </div>
-
       </div>
 
-
-      <!-- LOCAL -->
       <div class="service">
-
-        <img
-          src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1000&q=80"
-          alt="Local Taxi Service"
-        >
-
-        <div class="service-content">
-
+        <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=900&q=80"
+             alt="Local Cab Service">
+        <div>
           <h3>🚕 Local Trips</h3>
-
-          <p>
-            Convenient taxi service for local travel and city trips in Bangalore.
-          </p>
-
+          <p>Convenient cab service for local travel around Bengaluru.</p>
         </div>
-
       </div>
 
-
-      <!-- OUTSTATION -->
       <div class="service">
-
-        <img
-          src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1000&q=80"
-          alt="Outstation Cab Service"
-        >
-
-        <div class="service-content">
-
+        <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=900&q=80"
+             alt="Outstation Cab Service">
+        <div>
           <h3>🛣️ Outstation Trips</h3>
-
-          <p>
-            Comfortable cabs for outstation and long-distance travel.
-          </p>
-
+          <p>Comfortable cab travel for outstation trips and long journeys.</p>
         </div>
-
       </div>
 
     </div>
-
   </section>
 
-
-  <!-- ABOUT -->
   <section>
+    <h2>Our Location</h2>
 
-    <div class="about">
-
-      <h2>About JKH Tours & Travels</h2>
+    <div class="location">
+      <h3>JKH Tours & Travels</h3>
 
       <p>
-        JKH Tours & Travels provides dependable taxi services in Bangalore,
-        including airport cabs, local trips and outstation travel.
-        Contact us by phone or WhatsApp to book your cab.
+        Muneshwara Layout, 2nd Cross,<br>
+        Kodichikkanahalli, Bommanahalli,<br>
+        Bangalore South, Bengaluru,<br>
+        Karnataka – 560076
       </p>
 
+      <a class="map-btn"
+         href="https://www.google.com/maps/search/?api=1&query=Muneshwara+Layout+2nd+Cross+Kodichikkanahalli+Bommanahalli+Bengaluru+560076"
+         target="_blank">
+        📍 Get Directions
+      </a>
     </div>
-
   </section>
 
+  <div class="contact">
+    <h2>Book Your Cab Today</h2>
 
-  <!-- CONTACT -->
-  <section class="contact">
-
-    <h2>Book Your Cab</h2>
-
-    <p>📞 <strong>7899855299</strong></p>
-
-    <p>💬 WhatsApp: 7899855299</p>
-
-    <p>Bangalore, Karnataka</p>
+    <p>Call or WhatsApp JKH Tours & Travels for your next trip.</p>
 
     <br>
 
     <div class="buttons">
+      <a class="btn call" href="tel:+917899855299">📞 +91 78998 55299</a>
 
-      <a class="btn call" href="tel:+917899855299">
-        📞 Call Now
-      </a>
-
-      <a
-        class="btn whatsapp"
-        href="https://wa.me/917899855299"
-        target="_blank"
-      >
+      <a class="btn whatsapp"
+         href="https://wa.me/917899855299?text=Hello%20JKH%20Tours%20%26%20Travels%2C%20I%20want%20to%20book%20a%20cab."
+         target="_blank">
         💬 Book on WhatsApp
       </a>
-
     </div>
+  </div>
 
-  </section>
-
-
-  <!-- FOOTER -->
   <footer>
-
-    © 2026 <strong>JKH Tours & Travels</strong><br>
-    Airport Cabs • Local Trips • Outstation Trips
-
+    © 2026 JKH Tours & Travels. All Rights Reserved.
   </footer>
 
 </body>
