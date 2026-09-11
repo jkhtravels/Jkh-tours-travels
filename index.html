@@ -1,12 +1,12 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>JKH Tours & Travels | Airport Cab & Outstation Taxi</title>
+  <title>JKH Tours & Travels | Airport Cabs & Outstation Trips</title>
 
-  <meta name="description" content="JKH Tours & Travels provides airport cabs, local taxi services and outstation trips in Bangalore. Call or WhatsApp 7899855299 for booking.">
+  <meta name="description" content="JKH Tours & Travels - Airport cab service, local trips and outstation taxi service in Bangalore. Book your cab by phone or WhatsApp.">
 
   <style>
     * {
@@ -17,7 +17,7 @@
 
     body {
       font-family: Arial, sans-serif;
-      background: #f5f5f5;
+      background: #f7f7f7;
       color: #222;
       line-height: 1.6;
     }
@@ -30,50 +30,38 @@
     }
 
     .logo {
-      max-width: 180px;
-      max-height: 130px;
-      width: auto;
-      height: auto;
+      width: 180px;
+      max-width: 80%;
       margin-bottom: 10px;
+      border-radius: 10px;
     }
 
     header h1 {
-      color: #d4af37;
       font-size: 30px;
+      color: #d4af37;
       margin-bottom: 5px;
     }
 
     header p {
+      font-size: 17px;
       color: #fff;
-      font-size: 16px;
     }
 
     .hero {
-      background:
-        linear-gradient(rgba(0,0,0,.60), rgba(0,0,0,.60)),
-        url("https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1400&q=80")
-        center/cover;
-      min-height: 430px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
+      background: #111;
       color: white;
-      padding: 30px 20px;
-    }
-
-    .hero-content {
-      max-width: 750px;
+      text-align: center;
+      padding: 45px 20px;
     }
 
     .hero h2 {
-      font-size: 42px;
-      color: #fff;
-      margin-bottom: 15px;
+      font-size: 32px;
+      color: #d4af37;
+      margin-bottom: 12px;
     }
 
     .hero p {
-      font-size: 20px;
+      font-size: 18px;
       margin-bottom: 25px;
     }
 
@@ -86,8 +74,8 @@
 
     .btn {
       display: inline-block;
-      padding: 13px 22px;
-      border-radius: 7px;
+      padding: 14px 25px;
+      border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
       font-size: 16px;
@@ -100,339 +88,256 @@
 
     .whatsapp {
       background: #25D366;
-      color: #fff;
+      color: white;
     }
 
-    .section {
-      padding: 45px 18px;
+    section {
       max-width: 1100px;
       margin: auto;
+      padding: 40px 20px;
     }
 
-    .section h2 {
+    section h2 {
       text-align: center;
-      font-size: 30px;
-      margin-bottom: 30px;
+      font-size: 28px;
+      margin-bottom: 25px;
       color: #111;
-    }
-
-    .gold {
-      color: #b38b18;
     }
 
     .services {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 22px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
     }
 
-    .card {
+    .service {
       background: white;
       border-radius: 12px;
       overflow: hidden;
-      box-shadow: 0 3px 12px rgba(0,0,0,.12);
+      box-shadow: 0 3px 12px rgba(0,0,0,0.12);
     }
 
-    .card img {
+    .service img {
       width: 100%;
-      height: 210px;
+      height: 190px;
       object-fit: cover;
-      display: block;
     }
 
-    .card-content {
+    .service-content {
       padding: 20px;
       text-align: center;
     }
 
-    .card h3 {
-      color: #b38b18;
+    .service h3 {
+      color: #b18a16;
       font-size: 22px;
       margin-bottom: 8px;
     }
 
-    .booking {
-      background: #111;
-      color: white;
-      text-align: center;
-      padding: 50px 20px;
-    }
-
-    .booking h2 {
-      color: #d4af37;
-      margin-bottom: 12px;
-      font-size: 30px;
-    }
-
-    .booking p {
-      margin-bottom: 22px;
-      font-size: 17px;
-    }
-
-    .why {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 18px;
-      text-align: center;
-    }
-
-    .why-box {
+    .about {
       background: white;
-      padding: 25px 15px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,.10);
+      text-align: center;
+      border-radius: 12px;
+      padding: 30px 20px;
     }
 
-    .why-box .icon {
-      font-size: 38px;
-      margin-bottom: 10px;
-    }
-
-    .why-box h3 {
-      margin-bottom: 5px;
+    .about p {
+      font-size: 17px;
+      max-width: 800px;
+      margin: auto;
     }
 
     .contact {
-      background: #fff;
+      background: #111;
+      color: white;
       text-align: center;
     }
 
+    .contact h2 {
+      color: #d4af37;
+    }
+
     .contact p {
-      font-size: 17px;
+      font-size: 18px;
       margin: 8px 0;
-    }
-
-    .map {
-      margin-top: 25px;
-      border-radius: 10px;
-      overflow: hidden;
-    }
-
-    .map iframe {
-      width: 100%;
-      height: 320px;
-      border: 0;
     }
 
     footer {
       background: #000;
-      color: #fff;
+      color: white;
       text-align: center;
-      padding: 25px 15px;
+      padding: 20px;
+      font-size: 14px;
     }
 
     footer strong {
       color: #d4af37;
-    }
-
-    .floating-whatsapp {
-      position: fixed;
-      right: 18px;
-      bottom: 18px;
-      width: 58px;
-      height: 58px;
-      border-radius: 50%;
-      background: #25D366;
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: none;
-      font-size: 28px;
-      box-shadow: 0 3px 12px rgba(0,0,0,.3);
-      z-index: 999;
-    }
-
-    @media (max-width: 600px) {
-      .hero h2 {
-        font-size: 31px;
-      }
-
-      .hero p {
-        font-size: 17px;
-      }
-
-      header h1 {
-        font-size: 25px;
-      }
     }
   </style>
 </head>
 
 <body>
 
-  <!-- HEADER -->
   <header>
 
-    <!-- If your logo file is named logo.png, this will display it -->
-    <img src="logo.png" alt="JKH Tours & Travels Logo" class="logo"
-         onerror="this.style.display='none';">
+    <!-- YOUR LOGO -->
+    <img
+      class="logo"
+      src="https://jkhtravels.github.io/Jkh-tours-travels/logo.png"
+      alt="JKH Tours & Travels Logo"
+    >
 
     <h1>JKH Tours & Travels</h1>
+
     <p>Airport Cabs • Local Trips • Outstation Trips</p>
 
   </header>
 
+  <div class="hero">
 
-  <!-- HERO -->
-  <section class="hero">
-
-    <div class="hero-content">
-
-      <h2>Reliable Taxi Service in Bangalore</h2>
-
-      <p>
-        Airport Cab • Local Taxi • Outstation Trips
-      </p>
-
-      <div class="buttons">
-
-        <a class="btn call" href="tel:+917899855299">
-          📞 Call Now
-        </a>
-
-        <a class="btn whatsapp"
-           href="https://wa.me/917899855299?text=Hello%20JKH%20Tours%20%26%20Travels,%20I%20want%20to%20book%20a%20cab."
-           target="_blank">
-          💬 WhatsApp Booking
-        </a>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- SERVICES -->
-  <section class="section">
-
-    <h2>Our <span class="gold">Services</span></h2>
-
-    <div class="services">
-
-      <!-- Airport -->
-      <div class="card">
-
-        <img
-          src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=900&q=80"
-          alt="Airport cab service">
-
-        <div class="card-content">
-
-          <h3>✈️ Airport Cabs</h3>
-
-          <p>
-            Comfortable and reliable airport pickup and drop services.
-            Pre-book your cab for a smooth airport journey.
-          </p>
-
-        </div>
-
-      </div>
-
-
-      <!-- Local -->
-      <div class="card">
-
-        <img
-          src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&w=900&q=80"
-          alt="Local taxi service">
-
-        <div class="card-content">
-
-          <h3>🚕 Local Trips</h3>
-
-          <p>
-            Taxi service for local travel, meetings, shopping,
-            family trips and city travel in Bangalore.
-          </p>
-
-        </div>
-
-      </div>
-
-
-      <!-- Outstation -->
-      <div class="card">
-
-        <img
-          src="https://images.unsplash.com/photo-1465447142348-e9952c393450?auto=format&fit=crop&w=900&q=80"
-          alt="Outstation taxi service">
-
-        <div class="card-content">
-
-          <h3>🛣️ Outstation Trips</h3>
-
-          <p>
-            Comfortable outstation taxi trips from Bangalore
-            for family, business and leisure travel.
-          </p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- WHY CHOOSE US -->
-  <section class="section">
-
-    <h2>Why Choose <span class="gold">JKH?</span></h2>
-
-    <div class="why">
-
-      <div class="why-box">
-        <div class="icon">🚗</div>
-        <h3>Comfortable Rides</h3>
-        <p>Clean and comfortable travel for your journey.</p>
-      </div>
-
-      <div class="why-box">
-        <div class="icon">⏰</div>
-        <h3>On-Time Service</h3>
-        <p>We aim to provide dependable pickup and drop service.</p>
-      </div>
-
-      <div class="why-box">
-        <div class="icon">📞</div>
-        <h3>Easy Booking</h3>
-        <p>Call or WhatsApp us to book your cab quickly.</p>
-      </div>
-
-      <div class="why-box">
-        <div class="icon">⭐</div>
-        <h3>Customer Focused</h3>
-        <p>Friendly service for local and outstation travel.</p>
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- BOOKING -->
-  <section class="booking">
-
-    <h2>Book Your Cab Today</h2>
+    <h2>Reliable Cab Service in Bangalore</h2>
 
     <p>
-      Airport transfer, local taxi or outstation trip —
-      contact JKH Tours & Travels.
+      Airport transfers, local taxi service and comfortable outstation trips.
     </p>
 
     <div class="buttons">
 
-      <a class="btn call" href="tel:+917899855299">
-        📞 7899855299
+      <a
+        class="btn call"
+        href="tel:+917899855299"
+      >
+        📞 Call Now
       </a>
 
-      <a class="btn whatsapp"
-         href="https://wa.me/917899855299?text=Hello%20JKH%20Tours%20%26%20Travels,%20I%20want%20to%20book%20a%20cab."
-         target="_blank">
+      <a
+        class="btn whatsapp"
+        href="https://wa.me/917899855299"
+        target="_blank"
+      >
+        💬 WhatsApp Booking
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <section>
+
+    <h2>Our Services</h2>
+
+    <div class="services">
+
+      <div class="service">
+
+        <img
+          src="https://images.unsplash.com/photo-1516939884455-1445c8652f83?auto=format&fit=crop&w=900&q=80"
+          alt="Airport Cab Service"
+        >
+
+        <div class="service-content">
+
+          <h3>Airport Cabs</h3>
+
+          <p>
+            Comfortable and reliable airport pickup and drop services.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="service">
+
+        <img
+          src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=900&q=80"
+          alt="Local Taxi Service"
+        >
+
+        <div class="service-content">
+
+          <h3>Local Trips</h3>
+
+          <p>
+            Book a cab for local travel and city trips around Bangalore.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="service">
+
+        <img
+          src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=80"
+          alt="Outstation Taxi Service"
+        >
+
+        <div class="service-content">
+
+          <h3>Outstation Trips</h3>
+
+          <p>
+            Comfortable taxi service for outstation and long-distance trips.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section>
+
+    <div class="about">
+
+      <h2>About JKH Tours & Travels</h2>
+
+      <p>
+        JKH Tours & Travels provides dependable taxi services in Bangalore,
+        including airport cabs, local trips and outstation travel.
+        Contact us by phone or WhatsApp to book your cab.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <section class="contact">
+
+    <h2>Book Your Cab</h2>
+
+    <p>📞 <strong>7899855299</strong></p>
+
+    <p>💬 WhatsApp: 7899855299</p>
+
+    <p>
+      Bangalore, Karnataka
+    </p>
+
+    <br>
+
+    <div class="buttons">
+
+      <a
+        class="btn call"
+        href="tel:+917899855299"
+      >
+        📞 Call Now
+      </a>
+
+      <a
+        class="btn whatsapp"
+        href="https://wa.me/917899855299"
+        target="_blank"
+      >
         💬 Book on WhatsApp
       </a>
 
@@ -441,67 +346,12 @@
   </section>
 
 
-  <!-- CONTACT -->
-  <section class="section contact">
-
-    <h2>Contact <span class="gold">JKH Tours & Travels</span></h2>
-
-    <p>📞 <strong>Phone:</strong>
-      <a href="tel:+917899855299">7899855299</a>
-    </p>
-
-    <p>💬 <strong>WhatsApp:</strong>
-      <a href="https://wa.me/917899855299" target="_blank">
-        Chat with us
-      </a>
-    </p>
-
-    <p>📧 <strong>Email:</strong>
-      <a href="mailto:jkhtoursandtravels@gmail.com">
-        jkhtoursandtravels@gmail.com
-      </a>
-    </p>
-
-    <p>
-      📍 Bommanahalli, Bangalore, Karnataka
-    </p>
-
-    <!-- Google Maps -->
-    <div class="map">
-
-      <iframe
-        src="https://www.google.com/maps?q=Kodichikkanahalli%2C%20Bommanahalli%2C%20Bangalore%2C%20Karnataka%20560076&output=embed"
-        loading="lazy"
-        allowfullscreen>
-      </iframe>
-
-    </div>
-
-  </section>
-
-
-  <!-- FOOTER -->
   <footer>
 
-    <p>
-      © 2026 <strong>JKH Tours & Travels</strong>
-    </p>
-
-    <p>
-      Airport Cabs • Local Trips • Outstation Trips
-    </p>
+    © 2026 <strong>JKH Tours & Travels</strong><br>
+    Airport Cabs • Local Trips • Outstation Trips
 
   </footer>
-
-
-  <!-- FLOATING WHATSAPP BUTTON -->
-  <a
-    class="floating-whatsapp"
-    href="https://wa.me/917899855299?text=Hello%20JKH%20Tours%20%26%20Travels,%20I%20want%20to%20book%20a%20cab."
-    target="_blank"
-    aria-label="WhatsApp JKH Tours & Travels">
-    💬
-  </a>
 
 </body>
 </html>
